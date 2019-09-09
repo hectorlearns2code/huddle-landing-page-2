@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4989992973.js"></script>
   <title>Frontend Mentor | Huddle landing page with coded decorative elements</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <header class="header">
 
-    <a href="#" class="brand">
-      <img src="images/logo.svg" alt="" class="logo">
-    </a>
-    <a href="" class="button button-white">Try It Free</a>
+    <div class="container--header">
+      <a href="#" class="brand">
+        <img src="images/logo.svg" alt="Huddle Logo" class="logo">
+      </a>
+      <button href="" class="button button--white">Try It Free</button>
+    </div>
 
     <div class="container">
       <section class="section hero">
@@ -36,7 +35,7 @@
           Create connections with your users as you engage in genuine discussion. 
         </h3>
       
-        <a href="#" class="button button-pink">Get Started For Free</a>
+        <button href="#" class="button button--pink shadow--pink">Get Started For Free</button>
       </section>
     </div>
 
@@ -45,7 +44,7 @@
   <div class="container">
     <section class="section details">
   
-      <img src="" alt="" class="details__img">
+      <img src="images/illustration-your-users.svg" alt="" class="details__img">
   
       <h2 class="card__title">
         Flowing Conversations
@@ -72,31 +71,71 @@
   </div>
 
   <section class="section cta">
-    <h1 class="section__title">
+    <h1 class="cta__title">
       Try It Free
     </h1>
 
-    Fully featured 30-day free trial - no credit card required
+    <p class="cta__copy">
+      Fully featured 30-day free trial - no credit card required
+    </p>
   
-    Get Started For Free
+    <button href="#" class="button button--pink cta__button">Get Started For Free</button>
   </section>
 
-  &copy; Copyright 2019 Huddle. All rights reserved.
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  Subscribe
-
-  To receive tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
+  <div class="footer">
+    <div class="footer__logo">
+      <a href="#" class="brand">
+        <img src="images/logo.svg" alt="Huddle Logo" class="logo logo--footer">
+      </a>
+    </div>
+    <div class="col social">
+      <div class="social__list">
+        <a href="" class="social__link"><i class="fab fa-facebook-square"></i></a>
+        <a href="" class="social__link"><i class="fab fa-instagram"></i></a>
+        <a href="" class="social__link"><i class="fab fa-twitter-square"></i></span></a>
+      </div>
+      <small class="copyright">&copy; Copyright 2019 Huddle. All rights reserved.</small>
+    </div>
+  
+    <div class="col nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">About Us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">What We Do</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">FAQ</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Career</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  
+    <div class="col subscribe">
+      <h1 class="subscribe__title">
+        Subscribe
+      </h1>
+    
+      <p class="subscribe__copy">
+        To receive tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+        send you spam or pass on your email address
+      </p>
+      <form action="#" class="subscribe__form">
+        <input type="email" class="subscribe__input">
+        <button class="subscribe__button button button--pink">Subscribe</button>
+      </form>
+    
+    </div>
+  </div>
 
   <footer>
     <p class="attribution">

@@ -1,0 +1,248 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+// START
+
+// GENERAL
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Open Sans";
+    background-color: hsl(214, 64%, 98%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Poppins";
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+
+p {
+    font-size: 1rem;
+    color: hsl(208, 11%, 55%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin: 0 55px;
+}
+
+.button {
+    display: block;
+    border-radius: 3px;
+    padding: 32px 83px;
+    display: block;
+    background: #fff;
+    border: none;
+    font-size: 1.15rem;
+    margin: 0 auto;
+}
+
+.button--pink {
+    background: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+.shadow--pink {
+    box-shadow:  0 0 10px hsla(322, 100%, 66%, 0.5);
+}
+
+
+.section {
+    margin-bottom: 250px;
+}
+
+.details__img {
+    display: block;
+    width: 92.5%;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 250px;
+}
+
+
+// HEADER
+.container--header {
+    display: flex;
+    margin: 48px 30px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.brand {
+    display: block;
+}
+
+.logo {
+    height: 38px;
+}
+
+.button--white {
+    padding: 8px 48px;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    margin: 0;
+}
+
+// HERO
+.hero {
+    margin-top: 175px;
+}
+
+.hero__img {
+    display: block;
+    width: 93%;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.hero__headline {
+    font-size: 2.75rem;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.hero__subhead {
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align:  center;
+    color: hsl(208, 11%, 55%);
+    margin-bottom: 75px;
+}
+
+// DETAILS SECTION
+.details {
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+.card__title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.card__copy {
+    margin-bottom: 90px;
+}
+
+.card__copy:last-child {
+    margin-bottom: 0;
+}
+
+// CTA
+.cta {
+    background: #fff;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+    margin: 0 50px;
+    text-align: center;
+    padding: 70px 0;
+    margin-bottom: 190px;
+}
+
+.cta__title {
+    margin-bottom: 25px;
+}
+
+.cta__copy {
+    font-size: 1.15rem;
+    margin-bottom: 40px;
+}
+
+.cta__button {
+    padding: 26px 82px;
+}
+
+// FOOTER
+.footer {
+    background-color: hsl(192, 100%, 9%);
+    padding: 146px 50px 42px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo--footer {
+    filter: brightness(0) invert(1);
+    margin-bottom: 170px;
+}
+
+.social {
+    order: 1;
+}
+
+.nav {
+    margin-bottom: 160px;
+}
+
+.nav__item {
+    margin-bottom: 50px;
+}
+
+.nav__item:last-child {
+    margin-bottom: 0;
+}
+
+.nav__link {
+    color: #fff;
+}
+
+.subscribe {
+    text-align: center;
+    margin-bottom: 190px;
+}
+
+.subscribe__title {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.subscribe__copy {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.subscribe__input {
+    height: 95px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.subscribe__button {
+    height: 95px;
+    width: 100%;
+}
+
+.social {
+    text-align: center;
+    color: #fff;
+}
+
+.social__list {
+    margin-bottom: 50px;
+}
+
+.social__link {
+    font-size: 3rem;
+    color: #fff;
+    margin-right: 32px;
+}
+
+.social__link:last-child {
+    margin-right: 0;
+}
+
