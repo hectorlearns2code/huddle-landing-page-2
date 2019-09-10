@@ -85,11 +85,20 @@ h3 {
   font-size: 1.15rem;
 }
 
+.header {
+  background-image: url(../images/header-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 95px;
+}
+
 .container--header {
+  width: 92%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 25px 15px;
+  padding: 25px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -111,6 +120,7 @@ h3 {
 
 .hero {
   margin-top: 7rem;
+  margin-bottom: 0;
 }
 
 .hero__img {
@@ -136,6 +146,7 @@ h3 {
 
 .details {
   text-align: center;
+  margin-top: 135px;
 }
 
 .card__title {
@@ -154,9 +165,12 @@ h3 {
   background: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 2rem 7.5rem 2rem;
+  margin: 0 auto 7.5rem auto;
   text-align: center;
-  padding: 2.5rem 1.5rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 2.5rem 2rem;
 }
 
 .cta__title {
@@ -164,7 +178,7 @@ h3 {
 }
 
 .cta__copy {
-  font-size: .8rem;
+  font-size: .7rem;
   margin-bottom: 1rem;
 }
 
@@ -242,6 +256,7 @@ h3 {
   height: 4rem;
   width: 100%;
   margin-bottom: 1.5rem;
+  border: none;
 }
 
 .subscribe__button {
@@ -268,24 +283,124 @@ h3 {
   margin-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   html {
     font-size: 18px;
   }
   .container {
+    width: 83.33%;
     max-width: 1200px;
     margin: 0 auto;
   }
   .container--header {
+    width: 88.88%;
     max-width: 1280px;
-    margin: 0 auto;
-    margin-top: 74px;
+    padding-top: 74px;
   }
   .button--white {
     padding: 1rem 3.7rem;
   }
   .logo {
     height: 40px;
+  }
+  .header {
+    padding-bottom: 400px;
+  }
+  .hero {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 66.66%;
+  }
+  .hero__img {
+    width: 100%;
+  }
+  .hero__subhead {
+    margin: 0 1.8rem;
+    margin-bottom: 25px;
+  }
+  .details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 190px;
+    margin-bottom: 280px;
+  }
+  .details__img {
+    width: 49%;
+    margin: 0;
+  }
+  .col {
+    margin: 0;
+    text-align: left;
+    padding-left: 5.5rem;
+  }
+  .card__title {
+    margin-bottom: 1rem;
+  }
+  .card__copy {
+    margin-bottom: 2rem;
+  }
+  .cta {
+    padding: 95px 120px;
+    margin-bottom: 14.7rem;
+  }
+  .cta__title {
+    font-size: 1.8rem;
+  }
+  .cta__copy {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 80px;
+    padding-bottom: 175px;
+  }
+  .footer__brand {
+    margin-bottom: 0;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .footer__logo {
+    width: 100%;
+  }
+  .social {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    text-align: left;
+  }
+  .social__list {
+    margin-bottom: 1rem;
+  }
+  .footer__col {
+    width: 33.33%;
+  }
+  .nav__list {
+    -webkit-columns: 2;
+            columns: 2;
+  }
+  .subscribe {
+    text-align: left;
+  }
+  .subscribe__input {
+    border-radius: 6px;
+  }
+  .subscribe__button {
+    height: unset;
+    width: unset;
+    padding: 1rem 3rem;
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
