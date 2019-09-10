@@ -14,7 +14,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 13px;
 }
 
 body {
@@ -29,7 +29,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-size: 1rem;
   color: #808d99;
 }
 
@@ -41,17 +40,17 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 55px;
+  margin: 0 2rem;
 }
 
 .button {
+  font-size: 1rem;
   display: block;
   border-radius: 3px;
-  padding: 32px 83px;
+  padding: 1rem 3rem;
   display: block;
   background: #fff;
   border: none;
-  font-size: 1.15rem;
   margin: 0 auto;
 }
 
@@ -61,12 +60,12 @@ a {
 }
 
 .shadow--pink {
-  -webkit-box-shadow: 0 0 10px rgba(255, 82, 191, 0.5);
-          box-shadow: 0 0 10px rgba(255, 82, 191, 0.5);
+  -webkit-box-shadow: 0 0 8px rgba(255, 82, 191, 0.7);
+          box-shadow: 0 0 8px rgba(255, 82, 191, 0.7);
 }
 
 .section {
-  margin-bottom: 250px;
+  margin-bottom: 10rem;
 }
 
 .details__img {
@@ -75,14 +74,22 @@ a {
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto;
-  margin-bottom: 250px;
+  margin-bottom: 10rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.15rem;
 }
 
 .container--header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 48px 30px;
+  margin: 25px 15px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -90,23 +97,20 @@ a {
       align-content: center;
 }
 
-.brand {
-  display: block;
-}
-
 .logo {
-  height: 38px;
+  height: 20px;
 }
 
 .button--white {
-  padding: 8px 48px;
+  font-size: .9rem;
+  padding: 0 2rem;
   background-color: white;
   color: #00252e;
   margin: 0;
 }
 
 .hero {
-  margin-top: 175px;
+  margin-top: 7rem;
 }
 
 .hero__img {
@@ -115,35 +119,31 @@ a {
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto;
-  margin-bottom: 90px;
+  margin-bottom: 3rem;
 }
 
 .hero__headline {
-  font-size: 2.75rem;
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 2rem;
 }
 
 .hero__subhead {
   font-weight: 400;
-  font-size: 1.7rem;
   text-align: center;
   color: #808d99;
-  margin-bottom: 75px;
+  margin-bottom: 2.6rem;
 }
 
 .details {
-  margin-bottom: 200px;
   text-align: center;
 }
 
 .card__title {
-  font-size: 2.2rem;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 .card__copy {
-  margin-bottom: 90px;
+  margin-bottom: 3.5rem;
 }
 
 .card__copy:last-child {
@@ -154,28 +154,27 @@ a {
   background: #fff;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 50px;
+  margin: 0 2rem 7.5rem 2rem;
   text-align: center;
-  padding: 70px 0;
-  margin-bottom: 190px;
+  padding: 2.5rem 1.5rem;
 }
 
 .cta__title {
-  margin-bottom: 25px;
+  margin-bottom: 1rem;
 }
 
 .cta__copy {
-  font-size: 1.15rem;
-  margin-bottom: 40px;
+  font-size: .8rem;
+  margin-bottom: 1rem;
 }
 
 .cta__button {
-  padding: 26px 82px;
+  font-size: .8rem;
 }
 
 .footer {
   background-color: #00252e;
-  padding: 146px 50px 42px 50px;
+  padding: 9.5rem 2rem 2.5rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,10 +184,18 @@ a {
           flex-direction: column;
 }
 
+.footer__brand {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
 .logo--footer {
+  height: 2.1rem;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
-  margin-bottom: 170px;
+  margin: 0 auto;
 }
 
 .social {
@@ -198,11 +205,12 @@ a {
 }
 
 .nav {
-  margin-bottom: 160px;
+  margin-bottom: 7rem;
 }
 
 .nav__item {
-  margin-bottom: 50px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .nav__item:last-child {
@@ -215,29 +223,29 @@ a {
 
 .subscribe {
   text-align: center;
-  margin-bottom: 190px;
+  margin-bottom: 7rem;
 }
 
 .subscribe__title {
   color: #fff;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
 }
 
 .subscribe__copy {
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 
 .subscribe__input {
-  height: 95px;
+  height: 4rem;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 
 .subscribe__button {
-  height: 95px;
+  height: 4rem;
   width: 100%;
 }
 
@@ -247,16 +255,37 @@ a {
 }
 
 .social__list {
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
 }
 
 .social__link {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #fff;
-  margin-right: 32px;
+  margin-right: 1rem;
 }
 
 .social__link:last-child {
   margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .container--header {
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 74px;
+  }
+  .button--white {
+    padding: 1rem 3.7rem;
+  }
+  .logo {
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
