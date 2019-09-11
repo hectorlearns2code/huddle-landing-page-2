@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4989992973.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="scripts/header.js"></script>
   <title>Frontend Mentor | Huddle landing page with coded decorative elements</title>
 </head>
 <body>
@@ -23,7 +25,7 @@
 
     <div class="container">
       <section class="section hero">
-        <img src="images/illustration-mockups.svg" alt="Mockup Illustration" class="hero__img">
+        <img src="images/illustration-mockups.svg" alt="Mockup Illustration" class="hero__img reveal--bottom">
       
         <div class="hero__card">
           <h1 class="hero__headline">
@@ -45,35 +47,41 @@
   <div class="container">
     <section class="section details">
   
-      <img src="images/illustration-your-users.svg" alt="" class="details__img">
+      <img src="images/illustration-your-users.svg" alt="" class="details__img reveal--left">
   
-      <div class="col">
-        <h2 class="card__title">
-          Flowing Conversations
-        </h2>
-        <p class="card__copy">
-          You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
-        </p>
+      <div class="row">
+        <div class="card">
+          <h2 class="card__title reveal--bottom">
+            Flowing Conversations
+          </h2>
+          <p class="card__copy reveal--bottom">
+            You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.
+          </p>
+        </div>
       
-        <h2 class="card__title">
-          Grow Together
-        </h2>
-        <p class="card__copy">
-          Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form. 
-        </p>
+        <div class="card">
+          <h2 class="card__title reveal--bottom">
+            Grow Together
+          </h2>
+          <p class="card__copy reveal--bottom">
+            Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form. 
+          </p>
+        </div>
       
-        <h2 class="card__title">
-          Your Users
-        </h2>
-        <p class="card__copy">
-          It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
-        </p>
+        <div class="card">
+          <h2 class="card__title reveal--bottom">
+            Your Users
+          </h2>
+          <p class="card__copy reveal--bottom">
+            It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
+          </p>
+        </div>
       </div>
   
     </section>
   </div>
 
-  <section class="section cta">
+  <section class="section cta reveal--bottom">
     <h3 class="cta__title">
       Try It Free
     </h3>
@@ -148,5 +156,9 @@
       Coded by <a href="#">Hector Robles</a>.
     </p>
   </footer>
+
+  <!-- SCRIPTS -->
+  <script src="scripts/footer.js"></script>
+
 </body>
 </html>

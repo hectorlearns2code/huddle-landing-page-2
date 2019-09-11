@@ -1,5 +1,11 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    padding: .5rem 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
 
 
 // START
@@ -310,7 +316,8 @@ h3 {
         font-size: 16px;
     }
 
-    .header {
+    .container--header {
+        padding-top: 74px
     }
 
     .header__brand {
@@ -318,6 +325,14 @@ h3 {
             transform: rotate(-42deg);
             height: 1600px;
         }
+    }
+
+    .button--white {
+        padding: 1rem 3.7rem;
+    }
+
+    .logo {
+        height: 40px;
     }
 
     .hero {
@@ -328,13 +343,51 @@ h3 {
     .hero__card {
         width: 70%;
         margin: 0 auto;
-        padding-bottom: 200px;
+        padding-bottom: 250px;
 
         &::after {
             height: 700px;
             border-radius: 50px;
             left: 20%;
         }
+    }
+
+    // DETAILS SECTIONS
+    .row {
+        display: flex;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .card__title {
+        margin-bottom: 0;
+        margin-top: auto;
+    }
+
+    .card__copy {
+        margin-bottom: 0;
+        margin-top: auto;
+        padding-top: 1rem;
+    }
+    
+
+    // CTA
+    .cta {
+        padding: 95px 120px;
+        margin-bottom: 14.7rem;
+    }
+
+    .cta__title {
+        font-size: 1.8rem;
+    }
+
+    .cta__copy {
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
 
@@ -356,7 +409,7 @@ h3 {
 
 
 
-@media (min-width: 960px) {
+@media (min-width: 1440px) {
     html {
         font-size: 18px;
     }
@@ -371,23 +424,10 @@ h3 {
     .container--header {
         width: 88.88%;
         max-width: 1280px;
-        padding-top: 74px
-    }
-
-
-    .button--white {
-        padding: 1rem 3.7rem;
-    }
-
-    .logo {
-        height: 40px;
     }
 
 
     // HERO
-    .header {
-    }
-
     .header__brand {
         &::after {
             transform: rotate(-42deg);
@@ -438,35 +478,38 @@ h3 {
         margin: 0;
     }
 
-    .col {
+    .row {
         margin: 0;
         text-align: left;
         padding-left: 5.5rem;
     }
+    
+    .row {
+        display: block;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        margin-bottom: 2rem;
+    }
 
     .card__title {
         margin-bottom: 1rem;
+        margin-top: auto;
     }
 
     .card__copy {
-        margin-bottom:  2rem;
-    }
-
-
-    // CTA
-    .cta {
-        padding: 95px 120px;
-        margin-bottom: 14.7rem;
-    }
-
-    .cta__title {
-        font-size: 1.8rem;
-    }
-
-    .cta__copy {
-        font-size: 1rem;
+        margin-top: unset;
         margin-bottom: 2rem;
+        padding-top: unset;
     }
+    
+    .card:last-child {
+        margin-bottom: 0;
+    }
+
 
     // FOOTER
     .footer {
